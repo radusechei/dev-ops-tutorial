@@ -28,3 +28,13 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1 (c3b6bf11-643f-44af-83d3-b3e42091f949)'
+    appType: 'webAppLinux'
+    appName: 'AzureJavaDemo'
+    deployToSlotOrASE: true
+    resourceGroupName: 'AzureJavaDemo_group'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: '21'
