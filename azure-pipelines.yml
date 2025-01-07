@@ -35,4 +35,3 @@ steps:
     appType: 'webAppLinux'
     WebAppName: 'AzureJavaDemo'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
-    RuntimeStack: 'STATICSITE|1.0'
