@@ -36,5 +36,5 @@ steps:
     deployToSlotOrASE: true
     resourceGroupName: 'AzureJavaDemo_group'
     slotName: 'production'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
     runtimeStack: '21'
